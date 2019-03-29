@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			body{
+				-webkit-perspective: 800;
+			}
+			.box{
+				width:100px;
+				height:100px;
+				border:1px solid orange;
+				position:absolute;
+				left:200px;
+				top:100px;
+				transform: rotateY(50deg);
+				transform-style:preserve-3d ;
+				animation: name 2s linear infinite;
+			}
+			@-webkit-keyframes name{
+				from{transform: rotateY(0deg);}
+				to{transform: rotateY(360deg);}
+			}
+			.box>div{
+				text-align: center;
+				line-height: 100px;
+				color:white;
+				width:100px;
+				height:100px;	
+				position:absolute;
+				top:0;
+				left:0;		
+				backface-visibility: hidden;	
+			}
+			.box>div:nth-of-type(1){
+				background:antiquewhite;
+				transform: rotateY(180deg);
+			}
+			.box>div:nth-of-type(2){
+				background:lightpink;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<div>你好</div>
+			<div>再见</div>
+		</div>
+	</body>
+</html>
