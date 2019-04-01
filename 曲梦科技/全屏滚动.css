@@ -1,0 +1,111 @@
+	body{
+		width: 100%;
+		height: 100%;
+		/*overflow: hidden;*/
+	}
+
+		.box_top{
+			width: 100%;
+			height: 100%;
+		}
+		.box_top_box{
+		
+			position: relative;
+		}
+		.box_top_left{
+			float: left;
+		}
+
+		.box_carousel{
+			width: 100%;
+			height:638px;
+		}
+		.box_carousel_box{
+			width: 100%;
+			height:638px;
+			position: relative;
+			/*top: 20px;*/
+			overflow: hidden;
+		}
+		.carousel_ul{
+			width: 100%;
+			position: absolute;
+		}
+		.carousel_ul_li1{
+			width: 100%;
+			height:638px;
+
+
+		}
+		.carousel_ul_li2{
+			width: 100%;
+			height: 638px;
+
+		}
+		.carousel_ul_li3{
+			width: 100%;
+			height: 638px;
+
+
+			position: relative;
+		}
+		.carousel_ul_li4{
+			width: 100%;
+			height: 638px;
+
+		}
+		.carousel_ul_li5{
+			width: 100%;
+			height: 638px;
+
+		}
+        .carousel_ul_li6{
+			width: 100%;
+			height: 638px;
+
+		}
+		.carousel_ul_li7{
+			width: 100%;
+			height: 638px;
+		}
+		#robot{
+			position: absolute;
+			top: 50%;
+			margin-top: -156px;
+			animation: jiqiren 10s linear infinite;
+		}
+		@keyframes jiqiren{
+			0%{left: 430px;transform:rotateY(180deg);}
+			49%{transform:rotateY(180deg);}
+			50%{transform: rotateY(0deg);left: 800px;}
+			99%{transform: rotateY(0deg);};
+			100%{left: 430px;transform: rotateY(180deg);}
+		}
+		.carousel_ol{
+			width: 20px;
+			height: 100px;
+			position: absolute;
+			right: 10px;
+			top:50%;
+			margin-top:-130px;
+		}
+		.carousel_ol li{
+			width: 10px;
+			height: 10px;
+			border:1px solid #fff;
+			color: rgba(255,255,255,.1);
+			background-color:red;
+			margin:6px;
+			z-index: 200;
+		}
+		.carousel_ol li:hover{
+			cursor: pointer;
+		}
+		.bgc{
+			background: #fff;
+		}
+		.bg{
+			color: #fff
+		}
+
+		
